@@ -1,0 +1,41 @@
+# Soft dependencies extracted from modules themselves.
+softdep phy_exynos_usbdrd_super post:dwc3-exynos-usb
+softdep exynos_pd_el3 pre: exynos-el2
+softdep sec_hard_reset_hook pre: pinctrl-samsung-core
+softdep muic_s2mf301 pre: s2mf301_pmeter top_s2mf301
+softdep muic_s2mf301 post: s2mf301-usbpd
+softdep exynos_esca_dm pre: esca
+softdep softdog pre: s3c2410_wdt
+softdep pdic_s2mf301 pre: muic_s2mf301
+softdep fimc_is pre: cmupmucal clk_exynos exynos-pmu-if pinctrl-samsung-core pcie-exynos-rc phy-exynos-mipi samsung-iommu samsung-iommu-group
+softdep mcd_panel pre: s2dos05-regulator i2c-exynos5
+softdep synaptics_ts_i2c pre: acpm-mfd-bus
+softdep exynos_profiler_fn pre: exynos_thermal_v2 exynos-cpufreq sgpu exynos_devfreq
+softdep snd_soc_s5m3700 pre: snd-soc-samsung-vts
+softdep is_cis_imx906 pre: fimc-is
+softdep dwc3_exynos_usb pre:phy-exynos-usbdrd-super
+softdep exynos_devfreq pre: exynos_dm exynos_thermal  post: exynos-cpufreq mali_kbase
+softdep is_flash_s2mf301 pre: fimc-is
+softdep exynos_afm pre: exynos-cpufreq
+softdep exynos_drm pre: samsung_dma_heap
+softdep exynos_drm pre: phy-exynos-mipi
+softdep exynos_ufcc pre: exynos-cpufreq
+softdep mcd_panel_samsung_drv pre: mcd-panel
+softdep exynos_cpu_profiler pre: exynos_thermal_v2 exynos-cpufreq sgpu exynos_devfreq
+softdep sec_pm_debug pre: acpm-mfd-bus
+softdep is_actuator_ak737x pre: fimc-is
+softdep exynos_pd pre: clk_exynos
+softdep is_flash_sm5714 pre: fimc-is
+softdep exynos_mif_profiler pre: exynos_thermal_v2 exynos-cpufreq sgpu exynos_devfreq exynos-wow
+softdep exynos_main_profiler pre: exynos_thermal_v2 exynos-cpufreq sgpu exynos_devfreq
+softdep xperf pre: exynos-cpufreq
+softdep exynos_gpu_profiler pre: exynos_thermal_v2 exynos-cpufreq sgpu exynos_devfreq
+softdep is_cis_gn5 pre: fimc-is
+softdep exynos_dsufreq post: ems
+softdep exynos_cpufreq pre: ems
+softdep is_cis_imx616 pre: fimc-is
+softdep is_cis_gc05a3 pre: fimc-is
+softdep samsung_iommu_v9 pre: samsung-iommu-group-v9
+softdep s2mpu15_rtc_8845 pre: sec_pon_alarm
+softdep s2mf301_fuelgauge post: s2mf301_charger
+softdep is_cis_imx258 pre: fimc-is
